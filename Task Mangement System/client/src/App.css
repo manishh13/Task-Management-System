@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #242526;
+  --color-2: white;
+  --color-3: #0084ff;
+  --color-4: gray;
+  --color-5: #eb4034;
+  --color-6: #333;
+}
+
+body {
+  font-family: serif;
+  /* background-color: var(--color-1); */
+  color: var(--color-2);
+  overflow-x: hidden;
+}
+
+
+/* login part css starts from here */
+
+
+.background_container_login {
+  background: #242526;
+  background-image: url("https://img.freepik.com/premium-vector/online-data-protection-shield-abstract-with-computer-technology_29971-309.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  height: 750px;
+  max-height: 100vh;
+  padding-top: 50px;
+}
+
+
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 1px 2px 10px var(--color-4);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-2);
+}
+
+section .form {
+  margin-top: 30px;
+  padding: 0px 20px;
+  
+}
+
+.input_container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.input_container input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid var(--color-6);
+  border-radius: 5px;
+}
+
+.show_password {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+}
+
+.btn_container {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--color-4);
+  background: var(--color-1);
+  color: var(--color-2);
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  font-size: 16px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.error {
+  text-align: center;
+  color: var(--color-5);
+}
+
+/* login part css ends here */
+
+
+/* table css starts from here */
+
+table { 
+	width: 90%; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	color: black;
+	
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #fbfaf7e6; 
+	}
+	tr:nth-of-type(even) { 
+		background: #a09e9eb6; 
+		
+		}
+th { 
+	background: #48494a; 
+	/* color: rgb(10, 10, 10);  */
+	color: #fff;
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
+	font-size: 18px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+.error-page{
+  height: 100vh;
+  padding-top: 10vh;
+  width: 100vw;
+  overflow: hidden;
+}

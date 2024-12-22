@@ -1,0 +1,78 @@
+* {
+  font-family: serif;
+}
+/* Admin layout css starts from here */
+.admin-nav-emp {
+  font-weight: 300;
+}
+.sidebar-menu {
+  font-size: 15px;
+}
+.admin-content-main-container {
+  background: #242526;
+  /* background-image: url("https://images.unsplash.com/photo-1639322537228-f710d846310a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  border-top: 1px solid #ffffff4a;
+  border-left: 1px solid #ffffff4f;
+}
+
+/* Admin layout css ends here */
+
+/* add employee css starts from here */
+
+.add-employee-section {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 1px 2px 10px var(--color-4);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#isAdmin {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.alltaskdiv {
+  position: relative;
+}
+
+.confirmation-box {
+  height: 140px;
+  width: 400px;
+  background-color: #fffffff0;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  padding: 10px 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.confirmation-box-buttons {
+  margin-left: 60%;
+  position: absolute;
+  top: 75%;
+}
+
+.confirmation-box-buttons button {
+  padding: 5px 20px;
+  color: white;
+  margin-left: 10px;
+}
+.confirmation-box h2 {
+  font-weight: 400;
+}
+
+.confirmation-box p {
+  margin-top: 10px;
+}
+.confirmation-box-hide {
+  display: none;
+}
