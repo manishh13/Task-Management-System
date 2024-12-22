@@ -60,7 +60,7 @@ const AddEmployee = () => {
           }}
         >
           <h3 style={{ textAlign: "center", color: "#2D9596" }}>
-            Add Employee
+            Add User
           </h3>
           <form
             className="form"
